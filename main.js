@@ -32,7 +32,7 @@ $(document).ready(function() {
 	});
 	
 
-	$('input').blur(function(event) {
+	$('input').on('input', function(event) {
 		event.preventDefault();
 
 		$('#name').text($('#edit-name').val());
